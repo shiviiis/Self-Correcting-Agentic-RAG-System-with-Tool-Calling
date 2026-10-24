@@ -15,7 +15,7 @@ web search, grades its own context and answers, and retries with rewritten queri
 ![Web fallback](assets/web-fallback.png)
 
 ### Follow-up
-![Follow-up and refusal](assets/follow-up-question.png)
+![Follow-up and refusal](assets/follow-up-questions.png)
 
 ## Features
 - PDF/TXT semantic retrieval (Chroma + sentence-transformers) with incremental ingestion
@@ -57,9 +57,14 @@ graph TD;
     rewrite_query --> retrieve_pdf;
     finalize --> __end__;
 
-    classDef default fill:#f2f0ff,line-height:1.2
-    classDef first fill-opacity:0
-    classDef last fill:#bfb6fc
+    classDef default fill:#e8f4fd,stroke:#1f6feb,stroke-width:1.5px,color:#0b2a4a
+    classDef first fill:#d4f8d4,stroke:#2da44e,color:#0b3d1a
+    classDef last fill:#ffd9d9,stroke:#cf222e,color:#5c0a12
+
+    classDef retrieval fill:#dbeafe,stroke:#2563eb,color:#0b2a4a
+    classDef grading fill:#fef3c7,stroke:#d97706,color:#4a2c00
+    classDef generation fill:#dcfce7,stroke:#16a34a,color:#0b3d1a
+    classDef retry fill:#fee2e2,stroke:#dc2626,color:#5c0a12
 ```
 ## Project structure
 
